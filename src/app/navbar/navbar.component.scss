@@ -1,0 +1,22 @@
+.container-fluid{
+    background-color: rgb(101, 165, 101);
+    // display: flex;
+    // justify-content: space-between;
+    // // padding: 20px;
+    // align-items: center;
+}
+
+.nav-name
+{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.nav-items
+{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+// .nav-items div{
+//     margin-left: 5px;
+// }
