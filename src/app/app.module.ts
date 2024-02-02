@@ -24,6 +24,7 @@ import { ReviewCardComponent } from './shared/review-card/review-card.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
+  
     BrowserAnimationsModule
   ],
   providers: [],
