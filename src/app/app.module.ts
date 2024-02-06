@@ -10,6 +10,8 @@ import { CardComponent } from './shared/card/card.component';
 import { TherapiesComponent } from './main-body/therapies/therapies.component';
 import { TestomonialsComponent } from './main-body/testomonials/testomonials.component';
 import { ReviewCardComponent } from './shared/review-card/review-card.component';
+import { GeolocationComponent } from './shared/geolocation/geolocation.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ReviewCardComponent } from './shared/review-card/review-card.component'
     CardComponent,
     TherapiesComponent,
     TestomonialsComponent,
-    ReviewCardComponent
+    ReviewCardComponent,
+    GeolocationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
