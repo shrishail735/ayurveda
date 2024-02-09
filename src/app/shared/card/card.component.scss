@@ -1,21 +1,5 @@
-.productCard .textPart
-{
-    transition: transform 50ms linear;
-}
 
-.productCard:hover .textPart
-{
-    transform: translateY(-50%);
-    // bottom: 0;
-  
-}
 
-.productCard:hover .textPart div p
-{
-    font-style: italic;
-    height: 100%;
-    
-}
 .productCard
 {
     box-shadow: #183D3D 0px 5px 10px;
