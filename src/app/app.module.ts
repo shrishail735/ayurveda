@@ -12,6 +12,7 @@ import { TestomonialsComponent } from './main-body/testomonials/testomonials.com
 import { ReviewCardComponent } from './shared/review-card/review-card.component';
 import { GeolocationComponent } from './shared/geolocation/geolocation.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './main-body/about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     TestomonialsComponent,
     ReviewCardComponent,
     GeolocationComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
