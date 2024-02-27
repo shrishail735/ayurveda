@@ -13,6 +13,8 @@ import { ReviewCardComponent } from './shared/review-card/review-card.component'
 import { GeolocationComponent } from './shared/geolocation/geolocation.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './main-body/about/about.component';
+import { GalleryComponent } from './main-body/gallery/gallery.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { AboutComponent } from './main-body/about/about.component';
     ReviewCardComponent,
     GeolocationComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-  
+
+    HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [],
