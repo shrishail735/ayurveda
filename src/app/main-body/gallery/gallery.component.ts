@@ -10,16 +10,19 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class GalleryComponent implements OnInit {
   images: string[] = [];
-
+  selectedDisease="pimples";
   diseases =['pimples','piles','swellen','hairfall']
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
+
 
   ngOnInit(): void {
     this.loadImages();
   }
 
-  loadImages(disease:any = 'image'): void {
-    this.http.get('/assets/images/'+disease+'.json').subscribe((data: any) => {
+  loadImages(disease:any = 'pimples'): void {
+
+    this.selectedDisease=disease
+    this.http.get('/assets/images/'+this.selectedDisease+'.json').subscribe((data: any) => {
       // Assuming data is an array of image URLs
    this.images=data;
   });

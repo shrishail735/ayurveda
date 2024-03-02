@@ -6,8 +6,8 @@
 
 .box{
     box-shadow: #000000 0px 5px 15px;
-    padding: 15px;
-     background-color: #f7eeee;
+    padding: 10px;
+     background-color: #ECE3CE;
 }
 
 .inria-sans-regular {
@@ -15,3 +15,5 @@
     font-weight: 400;
     font-style: normal;
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

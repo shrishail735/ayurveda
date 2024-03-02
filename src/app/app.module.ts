@@ -15,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './main-body/about/about.component';
 import { GalleryComponent } from './main-body/gallery/gallery.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { TreatmentsComponent } from './main-body/treatments/treatments.component';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,13 +29,15 @@ import { HttpClientModule } from '@angular/common/http';
     GeolocationComponent,
     FooterComponent,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
+    TreatmentsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
 
     HttpClientModule,
+    MatMenuModule,
     BrowserAnimationsModule
   ],
   providers: [],

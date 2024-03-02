@@ -1,0 +1,21 @@
+.treatment
+{
+    animation: leftToright 0.7s ease-in-out;
+}
+
+@keyframes leftToright{
+    0%{
+        transform: translateY(-30px) ;
+    }
+    90%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.box{
+    box-shadow: #739072 0px 5px 15px;
+    padding: 10px;
+     background-color: #4F6F52;
+}
