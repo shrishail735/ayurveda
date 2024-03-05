@@ -35,30 +35,7 @@ export class TreatmentsComponent {
         effects:"",
         information:"When people look up advertisements for Ayurvedic treatments, most show oil being slowly dripped on the"
       },
-      {
-        id:4,
-        name:"Panchkarma",
-        effects:"",
-        information:"Among all common ayurvedic treatments, most people are aware of Panchkarma. Panch meaning five refers to"
-      },
-      {
-        id:5,
-        name:"Vamanan",
-        effects:"",
-        information:"Vamanan or medically induced vomiting might seem scary at first but has a host of benefits. The focus is to"
-      },
-      {
-        id:6,
-        name:"Nasyam",
-        effects:"",
-        information:"Nasyam refers to the process of administering treatments to the nose. Usually, the treatment is an oil and the"
-      },
-      {
-        id:7,
-        name:"Shirodhara",
-        effects:"",
-        information:"When people look up advertisements for Ayurvedic treatments, most show oil being slowly dripped on the"
-      },
+      
 
 
     ]

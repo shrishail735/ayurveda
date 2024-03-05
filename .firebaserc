@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ayurveda-c0b70"
+  },
+  "targets": {
+    "ayurveda-c0b70": {
+      "hosting": {
+        "ayurveda": [
+          "ayurveda-c0b70"
+        ]
+      }
+    }
+  }
+}

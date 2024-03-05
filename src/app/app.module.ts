@@ -17,6 +17,8 @@ import { GalleryComponent } from './main-body/gallery/gallery.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TreatmentsComponent } from './main-body/treatments/treatments.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { environment } from 'src/environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +37,10 @@ import {MatMenuModule} from '@angular/material/menu';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     HttpClientModule,
     MatMenuModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
