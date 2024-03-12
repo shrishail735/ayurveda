@@ -6,3 +6,15 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+.about
+{
+    transform: translateX(50vw); opacity: 0;
+    animation: left-to-right ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: 150px 400px;
+}
+
+@keyframes left-to-right {
+    to {transform: translateX(0px); opacity: 1;}
+}

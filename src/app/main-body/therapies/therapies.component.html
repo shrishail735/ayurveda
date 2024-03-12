@@ -5,7 +5,7 @@
 
     <!-- <p class="font-semibold text-3xl opacity-75 mb-5 uppercase md:text-4xl">Therapies</p> -->
 
-    <div class="flex flex-wrap justify-center" *ngIf="!showDialog">
+    <div class="flex flex-wrap justify-center therapy" *ngIf="!showDialog">
         <div *ngFor="let therapy of therapies">
             <app-card (click)="openDialog(therapy.id)" [therapy]="therapy"></app-card>
         </div>
