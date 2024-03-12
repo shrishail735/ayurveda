@@ -1,6 +1,7 @@
 # Ayurveda
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+You can visit site here : https://ayurveda-c0b70.firebaseapp.com/
 
 ## Development server
 
