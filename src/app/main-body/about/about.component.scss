@@ -9,12 +9,13 @@
 
 .about
 {
-    transform: translateX(50vw); opacity: 0;
-    animation: left-to-right ease-in-out forwards;
+    transform: translateY(50vw); opacity: 0;
+    animation: left-to-right linear forwards;
     animation-timeline: view();
     animation-range: 150px 400px;
+    overflow: hidden;
 }
 
 @keyframes left-to-right {
-    to {transform: translateX(0px); opacity: 1;}
+    to {transform: translateY(0px); opacity: 1;}
 }
