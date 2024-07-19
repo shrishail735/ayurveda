@@ -18,7 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { TreatmentsComponent } from './main-body/treatments/treatments.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { environment } from 'src/environments/environment';
-
+import { AdminPortalComponent } from './admin-portal/admin-portal.component';
+import {provideFirebaseApp, initializeApp } from '@angular/fire/app'
+import { provideStorage, getStorage } from '@angular/fire/storage';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,13 +34,16 @@ import { environment } from 'src/environments/environment';
     FooterComponent,
     AboutComponent,
     GalleryComponent,
-    TreatmentsComponent
+    TreatmentsComponent,
+    AdminPortalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     MatMenuModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
     BrowserAnimationsModule,
  
   ],

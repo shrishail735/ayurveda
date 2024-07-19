@@ -6,7 +6,7 @@
   <p class="font-semibold text-3xl opacity-75 mb-5 md:text-4xl uppercase">Gallery</p>
   <div class="p-2 bg-[#4F6F52]">
     <div class="flex justify-center gap-4 flex-wrap">
-      <button
+      <!-- <button
         class="p-2 text-white uppercase border-transparent border-b-2 hover:border-white"
         
         *ngFor="let disease of diseases"
@@ -14,17 +14,20 @@
         [ngClass]="{'Active':disease==selectedDisease}"
       >
         {{ disease }}
-      </button>
+      </button> -->
     </div>
   </div>
-  <div class="flex justify-center gap-4 p-3 flex-wrap bg-[#739072]">
+  <div *ngIf="images.length; else noImages" class="flex justify-center gap-4 p-3 flex-wrap bg-[#739072]">
     <div class="" *ngFor="let image of images">
       <img
         class="h-[300px] w-[300px] box"
-        [src]="'/assets/images/' + image"
+        [src]=image
         alt="Gallery Image"
       />
     </div>
   </div>
+  <ng-template #noImages>
+    <p>No images found.</p>
+  </ng-template>
 </div>
 
