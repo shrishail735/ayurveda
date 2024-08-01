@@ -1,6 +1,6 @@
 <div class="flex justify-center m-5">
-    <input class="cursor-pointer"  type="file" (change)="selectFile($event)" />
-    <button class="btn btn-secondary cursor-pointer" [disabled]="!selectedFile" (click)="uploadFile()">Upload</button>
+    <input class="cursor-pointer"  type="file" multiple (change)="selectFiles($event)" />
+    <button class="btn btn-secondary cursor-pointer" [disabled]="!selectedFiles" (click)="uploadFile()">Upload</button>
 
 </div>
 <p class="text-center text-green-400 font-bold italic">{{imageUploaded}}</p>

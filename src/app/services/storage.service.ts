@@ -7,12 +7,22 @@ export class StorageService {
 
   constructor(private storage:Storage) { }
   
-  async uploadImage(file: File): Promise<string> {
-    const storageRef = ref(this.storage, `uploads/${file.name}`);
-    
-    await uploadBytes(storageRef, file);
-    return getDownloadURL(storageRef);
+  async uploadImage(files: FileList): Promise<string[]> {
+    const fileArray = Array.from(files);
+    const downloadURLs: Promise<string>[] = [];
+  
+    fileArray.forEach(async(file) => {
+      const storageRef = ref(this.storage, `uploads/${file.name}`);
+      const uploadTask = await uploadBytes(storageRef, file);
+      const downloadURL = getDownloadURL(storageRef);
+  
+      downloadURLs.push(downloadURL);
+    });
+  
+    // Await all downloadURLs promises and return them
+    return Promise.all(downloadURLs);
   }
+  
   async getImages() {
     const storageRef = ref(this.storage, 'uploads/');
     const result = await listAll(storageRef);

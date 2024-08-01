@@ -9,25 +9,26 @@ import { StorageService } from '../services/storage.service';
   styleUrls: ['./admin-portal.component.scss']
 })
 export class AdminPortalComponent {
-  selectedFile:File|null=null
+  selectedFiles:FileList | undefined;
   imageUploaded:string=''
   constructor(private storage: StorageService ){}
 
  async uploadFile()
   {
-    if(this.selectedFile)
+    if(this.selectedFiles)
     {
       this.imageUploaded='Uploading.....'
-      const downloadURL = await this.storage.uploadImage(this.selectedFile);
+      const downloadURL = await this.storage.uploadImage(this.selectedFiles);
       if(downloadURL)
       {
         this.imageUploaded="Image uploaded successfully!"
       }
-      this.selectedFile=null;
+      this.selectedFiles=undefined;
     }
   }
-  selectFile(event: any) {
-     this.selectedFile = event.target.files[0];
+  selectFiles(event: any) {
+     this.selectedFiles = event.target.files;
+     console.log(this.selectedFiles)
      this.imageUploaded='';
     // const storageRef = ref(this.storage, `uploads/${file.name}`);
     // const uploadTask = uploadBytesResumable(storageRef, file);
